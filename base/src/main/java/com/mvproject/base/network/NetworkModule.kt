@@ -1,9 +1,7 @@
 package com.mvproject.base.network
 
 import android.content.Context
-import android.util.Log
 import com.google.gson.GsonBuilder
-import com.mvproject.base.BuildConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,8 +22,6 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideRetrofit(client: OkHttpClient): Retrofit {
-        Log.d("Version",BuildConfig.BUILD_TYPE)
-        Log.d("Version",BuildConfig.DEBUG.toString())
         return Retrofit.Builder().baseUrl(BASE_URL).client(client)
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build()
