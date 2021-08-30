@@ -7,8 +7,8 @@ import androidx.preference.PreferenceManager
 private const val USER_LOGGED: String = "user_logged"
 
 class CurrentUserRepository(context: Context) {
-    private val testPreferences: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(context)
-
+    private val testPreferences: SharedPreferences =
+        PreferenceManager.getDefaultSharedPreferences(context)
 
     fun setUserLogged(user: String?) {
         user?.let {

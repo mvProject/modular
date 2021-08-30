@@ -1,6 +1,6 @@
 object Dependencies {
 
-    //android ui
+    // android ui
     private const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
     private const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
     private const val constraintLayout =
@@ -9,27 +9,33 @@ object Dependencies {
     private const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     private const val material = "com.google.android.material:material:${Versions.material}"
 
-    //test libs
+    // test libs
     private const val junit = "junit:junit:${Versions.junit}"
     private const val extJUnit = "androidx.test.ext:junit:${Versions.extJunit}"
     private const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espresso}"
 
-    //network
+    // network
     private const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
-    private const val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.gsonConverter}"
-    private const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
+    private const val gsonConverter =
+        "com.squareup.retrofit2:converter-gson:${Versions.gsonConverter}"
+    private const val loggingInterceptor =
+        "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
     private const val gson = "com.google.code.gson:gson:${Versions.gson}"
 
-    //preference
+    // preference
     private const val preferenceKtx = "androidx.preference:preference-ktx:${Versions.preferenceKtx}"
 
-    //navigation
-    private const val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
-    private const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    // navigation
+    private const val navigationFragmentKtx =
+        "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    private const val navigationUiKtx =
+        "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
 
-    //lifecycle
-    private const val lifecycleLiveDataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
-    private const val lifecycleViewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    // lifecycle
+    private const val lifecycleLiveDataKtx =
+        "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
+    private const val lifecycleViewModelKtx =
+        "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
 
     // DI
     const val hilt = "com.google.dagger:hilt-android:${Versions.daggerHilt}"
@@ -77,5 +83,3 @@ object Dependencies {
         add(junit)
     }
 }
-
-

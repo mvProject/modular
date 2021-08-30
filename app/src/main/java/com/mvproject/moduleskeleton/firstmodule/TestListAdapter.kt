@@ -8,7 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.mvproject.base.model.ItemModel
 import com.mvproject.moduleskeleton.databinding.ItemListBinding
 
-class TestListAdapter(private val onItemClickListener: OnItemClickListener) : RecyclerView.Adapter<TestListAdapter.ItemViewHolder>() {
+class TestListAdapter(private val onItemClickListener: OnItemClickListener) :
+    RecyclerView.Adapter<TestListAdapter.ItemViewHolder>() {
     fun interface OnItemClickListener {
         fun onItemClick(supporter: ItemModel?)
     }

@@ -19,12 +19,12 @@ class LoginFragment : Fragment() {
     private val viewModel: LoginViewModel by viewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = LoginFragmentBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -56,15 +56,18 @@ class LoginFragment : Fragment() {
         Timber.d("MainActivity currentUserRepository UserLogged - $pass")
         when (pass) {
             "111" -> {
-                findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToFirstMainFragment())
+                findNavController().navigate(
+                    LoginFragmentDirections.actionLoginFragmentToFirstMainFragment()
+                )
             }
             "222" -> {
-                findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToSecondMainFragment())
+                findNavController().navigate(
+                    LoginFragmentDirections.actionLoginFragmentToSecondMainFragment()
+                )
             }
             else -> {
                 Timber.d("user not logged")
             }
         }
     }
-
 }

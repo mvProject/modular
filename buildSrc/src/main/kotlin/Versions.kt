@@ -1,9 +1,9 @@
 object Versions {
-    //app level
+    // app level
     const val gradle = "4.2.2"
     const val kotlin = "1.5.21"
-
-    //libs
+    const val ktLint = "9.4.1"
+    // libs
     const val coreKtx = "1.6.0"
     const val appcompat = "1.3.1"
     const val constraintLayout = "2.1.0"
@@ -12,23 +12,23 @@ object Versions {
     const val activityKtx = "1.3.1"
     const val timber = "5.0.1"
 
-    //navigation
+    // navigation
     const val navigation = "2.3.5"
 
-    //lifecycle
+    // lifecycle
     const val lifecycle = "2.3.1"
 
-    //test
+    // test
     const val junit = "4.13.2"
     const val extJunit = "1.1.3"
     const val espresso = "3.4.0"
 
-    //retrofit
+    // retrofit
     const val retrofit = "2.9.0"
     const val loggingInterceptor = "5.0.0-alpha.2"
     const val gson = "2.8.8"
     const val gsonConverter = "2.9.0"
 
-    //di
+    // di
     const val daggerHilt = "2.38.1"
 }

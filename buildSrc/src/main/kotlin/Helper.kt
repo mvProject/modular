@@ -1,6 +1,6 @@
 import org.gradle.api.artifacts.dsl.DependencyHandler
 
-//util functions for adding the different type dependencies from build.gradle file
+// util functions for adding the different type dependencies from build.gradle file
 fun DependencyHandler.hilt() {
     implementation(Dependencies.hilt)
     kapt(Dependencies.hiltCompiler)

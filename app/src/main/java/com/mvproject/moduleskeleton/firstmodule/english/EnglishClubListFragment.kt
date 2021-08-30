@@ -22,12 +22,12 @@ class EnglishClubListFragment : Fragment() {
     private val viewModel: EnglishViewModel by viewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = ListFragmentBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,15 +35,14 @@ class EnglishClubListFragment : Fragment() {
 
         viewModel.obtainClubs()
 
-        val secondClick = TestListAdapter.OnItemClickListener { club->
+        val secondClick = TestListAdapter.OnItemClickListener { club ->
             club?.let {
                 Toast.makeText(requireContext(), "clicked - ${it.name}", Toast.LENGTH_LONG).show()
             }
         }
         secondAdapter = TestListAdapter(secondClick)
 
-
-        with(binding){
+        with(binding) {
             clublist.apply {
                 layoutManager = LinearLayoutManager(requireContext())
                 adapter = secondAdapter
@@ -63,5 +62,4 @@ class EnglishClubListFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

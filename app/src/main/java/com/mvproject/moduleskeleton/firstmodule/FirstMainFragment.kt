@@ -18,29 +18,35 @@ class FirstMainFragment : Fragment() {
     private val viewModel: FirstMainViewModel by viewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FirstMainFragmentBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        with(binding){
+        with(binding) {
             buttonLogoutFirst.setOnClickListener {
                 viewModel.logUser("")
-                findNavController().navigate(FirstMainFragmentDirections.actionFirstMainFragmentToLoginFragment())
+                findNavController().navigate(
+                    FirstMainFragmentDirections.actionFirstMainFragmentToLoginFragment()
+                )
             }
 
             buttonEnglish.setOnClickListener {
-                findNavController().navigate(FirstMainFragmentDirections.actionFirstMainFragmentToFirstListFragment())
+                findNavController().navigate(
+                    FirstMainFragmentDirections.actionFirstMainFragmentToFirstListFragment()
+                )
             }
 
             buttonSpanish.setOnClickListener {
-                findNavController().navigate(FirstMainFragmentDirections.actionFirstMainFragmentToSecondListFragment())
+                findNavController().navigate(
+                    FirstMainFragmentDirections.actionFirstMainFragmentToSecondListFragment()
+                )
             }
         }
     }
@@ -49,5 +55,4 @@ class FirstMainFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

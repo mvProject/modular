@@ -22,12 +22,12 @@ class SpanishClubListFragment : Fragment() {
     private val viewModel: SpanishViewModel by viewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = ListFragmentBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -62,5 +62,4 @@ class SpanishClubListFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }
