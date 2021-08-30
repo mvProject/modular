@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/firstMainFragment"
+    android:id="@id/first_app_flow">
+
+    <fragment
+        android:id="@+id/firstMainFragment"
+        android:name="com.mvproject.firstappmodule.FirstMainFragment"
+        android:label="@string/first_module_main_fragment"
+        tools:layout="@layout/first_main_fragment" >
+
+        <action
+            android:id="@+id/action_firstMainFragment_to_englishClubListFragment"
+            app:destination="@id/englishClubListFragment" />
+        <action
+            android:id="@+id/action_firstMainFragment_to_SpanishClubListFragment"
+            app:destination="@id/spanishClubListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/englishClubListFragment"
+        android:name="com.mvproject.firstappmodule.english.EnglishClubListFragment"
+        android:label="EnglishClubListFragment"
+        tools:layout="@layout/list_fragment" >
+        <action
+            android:id="@+id/action_englishClubListFragment_to_firstMainFragment"
+            app:destination="@id/firstMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/spanishClubListFragment"
+        android:name="com.mvproject.firstappmodule.spanish.SpanishClubListFragment"
+        android:label="SpanishClubListFragment"
+        tools:layout="@layout/list_fragment" >
+        <action
+            android:id="@+id/action_spanishClubListFragment_to_firstMainFragment"
+            app:destination="@id/firstMainFragment" />
+    </fragment>
+</navigation>

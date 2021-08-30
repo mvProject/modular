@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="login_flow" type="id" />
+    <item name="first_app_flow" type="id" />
+    <item name="second_app_flow" type="id"/>
+</resources>

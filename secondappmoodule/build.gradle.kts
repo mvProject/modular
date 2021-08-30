@@ -1,5 +1,5 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     kotlin("android")
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
@@ -11,43 +11,19 @@ android {
     buildToolsVersion = Config.buildToolsVersion
 
     defaultConfig {
-        applicationId = "com.mvproject.moduleskeleton"
         minSdk = Config.minSdk
         targetSdk = Config.targetSdk
         versionCode = Config.versionCode
         versionName = Config.versionName
-
         testInstrumentationRunner = Config.androidTestInstrumentation
     }
 
-    signingConfigs {
-        register("configRelease").configure {
-            storeFile = file("../presale.jks")
-            storePassword = "iq2umgo9"
-            keyAlias = "presale"
-            keyPassword = "iq2umgo9"
-        }
-    }
-
     buildTypes {
-        getByName("debug") {
-            isDebuggable = true
-            setProperty(
-                "archivesBaseName",
-                "${rootProject.name}_${project.android.defaultConfig.versionName}"
-            )
-        }
-
         getByName("release") {
-            signingConfig = signingConfigs.getByName("configRelease")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
-            )
-            setProperty(
-                "archivesBaseName",
-                "${rootProject.name}_${project.android.defaultConfig.versionName}"
             )
         }
     }
@@ -60,7 +36,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
     viewBinding {
         android.buildFeatures.viewBinding = true
     }
@@ -68,15 +43,9 @@ android {
 
 dependencies {
     implementation(project(":base"))
-    implementation(project(":loginmodule"))
-    implementation(project(":secondappmoodule"))
-    implementation(project(":firstappmodule"))
     implementation(project(":navigation"))
 
     implementation(Dependencies.appLibraries)
-    implementation(Dependencies.network)
-    implementation(Dependencies.logging)
-    implementation(Dependencies.lifecycleKtx)
     implementation(Dependencies.navigationKtx)
 
     hilt()

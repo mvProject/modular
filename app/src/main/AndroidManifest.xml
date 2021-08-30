@@ -16,13 +16,16 @@
         android:theme="@style/Theme.ModuleSkeleton"
         android:allowBackup="false">
         <activity
-            android:name=".MainActivity"
+            android:name="com.mvproject.loginmodule.LoginActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <nav-graph android:value="@navigation/main_nav_graph" />
         </activity>
     </application>
 

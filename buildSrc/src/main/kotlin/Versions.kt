@@ -1,7 +1,7 @@
 object Versions {
     // app level
     const val gradle = "4.2.2"
-    const val kotlin = "1.5.21"
+    const val kotlin = "1.5.30"
     const val ktLint = "9.4.1"
     // libs
     const val coreKtx = "1.6.0"

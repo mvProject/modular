@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">firstappmodule</string>
+    <string name="first_module_main_fragment">First Main Fragment</string>
+
+    <string name="btn_next">Next</string>
+    <string name="btn_spanish_title">Spanish Clubs</string>
+    <string name="btn_english_title">English Clubs</string>
+    <string name="btn_logout">Logout</string>
+</resources>
