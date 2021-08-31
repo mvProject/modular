@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">secondAppMoodule</string>
     <string name="second_module_main_fragment">Second Main Fragment</string>
 
     <string name="btn_next">Next</string>

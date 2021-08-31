@@ -36,6 +36,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    viewBinding {
+        android.buildFeatures.viewBinding = true
+    }
 }
 
 dependencies {
@@ -43,6 +47,7 @@ dependencies {
     implementation(Dependencies.preference)
     implementation(Dependencies.network)
     implementation(Dependencies.navigationKtx)
+    implementation(Dependencies.logging)
     hilt()
 
     testImplementation(Dependencies.testLibraries)

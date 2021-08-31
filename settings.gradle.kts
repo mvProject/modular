@@ -9,7 +9,6 @@ rootProject.name = "ModuleSkeleton"
 include(
     ":app",
     ":base",
-    ":loginmodule",
     ":firstappmodule",
     ":secondappmoodule"
 )

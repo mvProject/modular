@@ -1,4 +1,4 @@
-package com.mvproject.loginmodule
+package com.mvproject.base.login
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.mvproject.loginmodule.databinding.LoginFragmentBinding
+import com.mvproject.base.databinding.LoginFragmentBinding
 import com.mvproject.base.navigation.NavigationFlow
 import com.mvproject.base.navigation.ToFlowNavigatable
 import dagger.hilt.android.AndroidEntryPoint

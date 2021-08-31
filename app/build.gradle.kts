@@ -68,7 +68,6 @@ android {
 
 dependencies {
     implementation(project(":base"))
-    implementation(project(":loginmodule"))
     implementation(project(":secondappmoodule"))
     implementation(project(":firstappmodule"))
 

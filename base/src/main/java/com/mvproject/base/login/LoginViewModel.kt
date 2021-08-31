@@ -1,4 +1,4 @@
-package com.mvproject.loginmodule
+package com.mvproject.base.login
 
 import androidx.lifecycle.ViewModel
 import com.mvproject.base.storage.CurrentUserRepository

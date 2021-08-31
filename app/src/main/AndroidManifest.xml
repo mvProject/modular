@@ -16,7 +16,7 @@
         android:theme="@style/Theme.ModuleSkeleton"
         android:allowBackup="false">
         <activity
-            android:name="com.mvproject.loginmodule.LoginActivity"
+            android:name="com.mvproject.base.login.MainActivity"
             android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
