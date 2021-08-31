@@ -4,5 +4,7 @@
     app:startDestination="@id/startFragment"
     android:id="@id/second_app_flow">
 
-    <fragment android:id="@+id/startFragment" android:name="com.mvproject.secondappmoodule.SecondMainFragment" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.mvproject.secondappmoodule.SecondMainFragment"/>
 </navigation>
