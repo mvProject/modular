@@ -43,7 +43,6 @@ android {
 
 dependencies {
     implementation(project(":base"))
-    implementation(project(":navigation"))
 
     implementation(Dependencies.appLibraries)
     implementation(Dependencies.navigationKtx)

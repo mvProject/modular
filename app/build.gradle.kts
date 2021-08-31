@@ -71,7 +71,6 @@ dependencies {
     implementation(project(":loginmodule"))
     implementation(project(":secondappmoodule"))
     implementation(project(":firstappmodule"))
-    implementation(project(":navigation"))
 
     implementation(Dependencies.appLibraries)
     implementation(Dependencies.network)

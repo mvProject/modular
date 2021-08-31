@@ -1,6 +1,7 @@
-package com.mvproject.navigation
+package com.mvproject.base.navigation
 
 import androidx.navigation.NavController
+import com.mvproject.base.MainNavGraphDirections
 import javax.inject.Inject
 
 class Navigator @Inject constructor() {

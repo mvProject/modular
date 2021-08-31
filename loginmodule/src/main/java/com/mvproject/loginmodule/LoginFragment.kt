@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.mvproject.loginmodule.databinding.LoginFragmentBinding
-import com.mvproject.navigation.NavigationFlow
-import com.mvproject.navigation.ToFlowNavigatable
+import com.mvproject.base.navigation.NavigationFlow
+import com.mvproject.base.navigation.ToFlowNavigatable
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 

@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.mvproject.firstappmodule.databinding.FirstMainFragmentBinding
-import com.mvproject.navigation.NavigationFlow
-import com.mvproject.navigation.ToFlowNavigatable
+import com.mvproject.base.navigation.NavigationFlow
+import com.mvproject.base.navigation.ToFlowNavigatable
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

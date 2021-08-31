@@ -1,4 +1,4 @@
-package com.mvproject.navigation
+package com.mvproject.base.navigation
 
 sealed class NavigationFlow {
     object LoginFlow : NavigationFlow()

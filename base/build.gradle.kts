@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -38,6 +39,7 @@ android {
 }
 
 dependencies {
+    implementation(Dependencies.appLibraries)
     implementation(Dependencies.preference)
     implementation(Dependencies.network)
     implementation(Dependencies.navigationKtx)

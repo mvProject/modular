@@ -11,6 +11,5 @@ include(
     ":base",
     ":loginmodule",
     ":firstappmodule",
-    ":secondappmoodule",
-    ":navigation"
+    ":secondappmoodule"
 )

@@ -4,9 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.mvproject.loginmodule.databinding.ActivityLoginBinding
-import com.mvproject.navigation.NavigationFlow
-import com.mvproject.navigation.Navigator
-import com.mvproject.navigation.ToFlowNavigatable
+import com.mvproject.base.navigation.NavigationFlow
+import com.mvproject.base.navigation.Navigator
+import com.mvproject.base.navigation.ToFlowNavigatable
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
